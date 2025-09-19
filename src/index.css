@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+@layer base {
+  :root { color-scheme: light; }
+  .dark { color-scheme: dark; }
+}
+
+@layer components {
+  .brand-grad { @apply bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-rose-500; }
+  .brand-grad-2 { @apply bg-gradient-to-tr from-cyan-500 via-blue-600 to-violet-600; }
+  .card { @apply bg-white/90 dark:bg-slate-800/80 backdrop-blur border border-gray-200 dark:border-slate-700 rounded-xl shadow-sm hover:shadow-md transition-shadow; }
+  .pill { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium; }
+  .pill-green { @apply pill bg-green-100 text-green-700 dark:bg-emerald-900/40 dark:text-emerald-200; }
+  .pill-gray { @apply pill bg-gray-100 text-gray-700 dark:bg-slate-700 dark:text-slate-200; }
+  .pill-amber { @apply pill bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200; }
+  .btn { @apply inline-flex items-center justify-center px-3 py-2 rounded-lg border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 active:scale-[.99] transition text-sm; }
+  .btn-primary { @apply px-3 py-2 rounded-lg text-white brand-grad shadow hover:shadow-md text-sm; }
+  .btn-ghost { @apply px-3 py-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700; }
+  .toolbar { @apply flex flex-wrap items-center gap-2 p-3 card; }
+  .tag { @apply px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200 text-xs; }
+  .kbd { @apply px-1.5 py-0.5 rounded border border-slate-300 dark:border-slate-600 text-[10px] uppercase tracking-wide; }
+}
