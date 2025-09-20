@@ -9,8 +9,7 @@
 A polished **HR-first, front-end–only hiring tool** where recruiters can manage jobs, candidates, assessments, and notifications.  
 The app simulates a realistic hiring workflow with server-like behavior using **MirageJS/MSW** and **local persistence (IndexedDB)** — no backend required.
 
-🔗 **Live Demo**: [https://talent-flow-assessment.vercel.app](https://talent-flow-assessment.vercel.app)  
-📂 **Repo**: [GitHub Link]()
+🔗 **Live Demo**: https://starlit-buttercream-76eb43.netlify.app/
 
 ---
 
